@@ -20,7 +20,10 @@ class Database:
                 f'postgresql+psycopg2://{self.user}:{self.password}@{self.host}:{self.port}/{self.database}'
             )
             self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
+
+            #MODELS
             from .user_model import UserModel
+            
             Base.metadata.create_all(bind=self.engine)
             print("Connection to PostgreSQL DB successful")
         except Exception as e:

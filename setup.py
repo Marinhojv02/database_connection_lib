@@ -11,6 +11,7 @@ setup(
     scripts=[
         # Scripts adicionais, se houver
     ],
+    description="A private library to connect to PostgreSQL using SQLAlchemy",
     classifiers=[
         'Programming Language :: Python :: 3',
         # Outras classificações
