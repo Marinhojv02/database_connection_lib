@@ -6,7 +6,8 @@ setup(
     packages=find_packages(),
     install_requires=[
         "sqlalchemy",
-        "psycopg2-binary"
+        "psycopg2-binary",
+        "pika"
     ],
     scripts=[
         # Scripts adicionais, se houver
